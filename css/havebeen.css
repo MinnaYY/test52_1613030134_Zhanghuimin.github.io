@@ -1,0 +1,292 @@
+/*侧栏导航区*/
+#sidenav {
+  height: 100%;
+  width: 300px;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #5ccebe;
+  background: url("../images/stars.png") no-repeat center;
+  background-size: cover;
+  overflow-x: hidden;
+  border-radius: 9px;
+}
+#sidenav:before {
+  position: absolute;
+  content: "";
+  background: #f79b9b80;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  right: 0;
+  top: 0;
+}
+
+header {
+  padding-top: 9em;
+}
+
+.navbar {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  flex-direction: column !important;
+}
+
+.subnav-logo {
+  width: 200px;
+  float: left;
+  position: relative;
+  min-height: 1px;
+  margin-top: 5px;
+  padding-left: 15px;
+  padding-right: 0;
+}
+
+.navbar-collapse {
+  flex-grow: 1;
+  float: left;
+}
+
+.navbar-nav {
+  display: flex;
+  flex-direction: column;
+  padding-left: 0;
+  margin-bottom: 0;
+  list-style: none;
+  text-align: center;
+}
+.navbar-nav li {
+  margin: 1em 0 0;
+}
+
+.navbar-nav li a {
+  color: #000;
+  font-weight: 600;
+  letter-spacing: 1px;
+  font-family: "云书法手书建刚槐树简", Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 15px;
+}
+.navbar-nav li a:hover {
+  color: #f05b72;
+  font-weight: 600;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  font-size: 15px;
+}
+
+/*主页面区*/
+#main {
+  margin-left: 300px;
+}
+
+.sub-main {
+  display: flex;
+  height: 550px;
+  margin: 8px;
+  border-radius: 10px;
+}
+
+.container {
+  width: 100%;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.main-name {
+  width: 90%;
+  margin: 125px 50px 200px 50px;
+  background: #5c7ace57;
+}
+.sub-main h2 {
+  color: #fff;
+  text-shadow: 1px 1px 1px #000;
+  text-align: center;
+  font-size: 7em;
+  font-weight: bold;
+  font-family: "云书法手书建刚槐树简";
+  margin: 0;
+}
+
+section#detail,
+.photoshare{
+  margin: 8px;
+  padding: 1em;
+  border: 1px solid #dacfcf;
+  border-radius: 9px;
+}
+
+.detail-item {
+  background: #fcefaaa8;
+  width: 100%;
+  display: flex;
+}
+
+.detail-item .detail-img {
+  position: relative;
+  padding: 10px;
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.detail-item .detail-text {
+  position: relative;
+  padding: 10px;
+  width: 50%;
+}
+.detail-text .card {
+  padding: 20px;
+}
+.card h3 {
+  color: #f391a9;
+  text-shadow: 1px 1px 1px #000;
+  text-align: center;
+  font-size: 3em;
+  font-weight: bold;
+  font-family: "云书法手书建刚槐树简";
+  margin: 0;
+}
+.card p {
+  margin: 0;
+  margin-bottom: 15px;
+  padding-left: 10px;
+  color: #777;
+  font-size: 1em;
+  line-height: 2;
+}
+.item-pink {
+  background: #fdeef1;
+}
+
+.photoshare {
+  padding: 20px 10px;
+  justify-content: center;
+  align-items: center;
+}
+
+.photo-left {
+  width: 630px;
+  display: block;
+  float: left;
+  margin-left: 25px;
+}
+.photo-right {
+  float: left;
+  width: 290px;
+}
+.photo-section {
+  width: 300px;
+  float: left;
+  margin: 5px 7px;
+  position: relative;
+  min-height: 1px;
+}
+
+.photo-section-item {
+  display: block;
+  width: 100%;
+  position: relative;
+  background: #fff;
+  overflow: hidden;
+  z-index: 9;
+  bottom: 0;
+  box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.08);
+  border-radius: 0px;
+  transition: 0.3s;
+}
+.photo-section-item:hover {
+  bottom: 7px;
+  text-decoration: none;
+  -webkit-box-shadow: 0px 1px 10px 0px rgba(0, 0, 0, 0.19);
+  -moz-box-shadow: 0px 1px 10px 0px rgba(0, 0, 0, 0.19);
+  -ms-box-shadow: 0px 1px 10px 0px rgba(0, 0, 0, 0.19);
+  -o-box-shadow: 0px 1px 10px 0px rgba(0, 0, 0, 0.19);
+  box-shadow: 0px 1px 10px 0px rgba(0, 0, 0, 0.19);
+}
+#my-mini-footer {
+  padding: 30px 50px;
+  clear: both;
+  position: relative;
+}
+#my-mini-footer .sub-footer p {
+  color: pink;
+  font-family: "云书法手书建刚槐树简", Arial, sans-serif;
+  font-weight: 400;
+  margin: 0;
+  text-decoration: none;
+}
+.sub-footer p {
+  padding: 0 20px 0 0;
+}
+
+#my-footer li a {
+  text-decoration: none;
+  color: pink;
+}
+
+.imgbox {
+  position: absolute;
+  left: 280px;
+  top: 240px;
+  z-index: 1;
+}
+
+.tablebox{
+    width: 99%;
+    padding:5px;
+}
+
+.tablebox1{
+  padding:30px 115px;
+  border: 1px solid #dacfcf;
+  border-radius: 9px;
+}
+
+table {
+  border-collapse: collapse;
+  font-size: 17px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+th,
+td {
+  padding: 0.65em;
+}
+
+thead th {
+  background: rgb(248, 213, 213);
+  color: black;
+}
+
+tbody tr:nth-child(odd) {
+  background:#fcefaaa8;
+}
+tbody tr:nth-child(even) {
+  background: #fdeef1;
+}
+
+th:first-child{
+  border-radius: 9px 0 0 0;
+}
+
+th:last-child{
+  border-radius: 0 9px 0 0;
+}
+
+tr:last-child td:first-child {
+  border-radius: 0 0 0 9px;
+}
+
+tr:last-child td:last-child {
+  border-radius: 0 0 9px 0;
+}
+
+.tablebox h3{
+    color: #f391a9;
+    font-size: 40px;
+    text-align: center;
+}
